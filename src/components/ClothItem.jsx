@@ -140,72 +140,9 @@ export default function ClothItem({
             draggable={false}
             className="rounded-md"
           />
-
-          {/* shine sweep (only visible after folded appears) */}
-          {/* <motion.div
-            initial={{ opacity: 0, x: "-120%" }}
-            animate={flipped ? { opacity: 0.85, x: "120%" } : { opacity: 0 }}
-            transition={
-              flipped
-                ? { delay: 0.25 + index * 0.05, duration: 0.9, ease: "easeInOut" }
-                : { duration: 0.2 }
-            }
-            style={{
-              position: "absolute",
-              top: 0,
-              left: 0,
-              width: "35%",
-              height: "100%",
-              background:
-                "linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.85) 50%, rgba(255,255,255,0) 100%)",
-              transform: "skewX(-20deg)",
-              pointerEvents: "none",
-            }}
-          /> */}
         </motion.div>
       </motion.div>
     </div>
   );
 }
 
-
-// // src/components/ClothItem.jsx
-// import { motion } from "framer-motion";
-
-// const ClothItem = ({ wrinkledSrc, foldedSrc, delay = 0 }) => {
-//   return (
-//     <div className="relative w-40 h-40 flex items-center justify-center">
-//       {/* Wrinkled phase */}
-//       <motion.img
-//         src={wrinkledSrc}
-//         alt="Wrinkled cloth"
-//         className="absolute w-60 h-60 object-contain"
-//         initial={{ opacity: 0, scale: 0.2, y: 50 }}
-//         animate={{
-//           opacity: [0, 1, 1, 0],
-//           scale: [0.8, 1, 1, 0.5],
-//           rotate: [0, 15, -15, 20],
-//           y: [50, -20, 20, -80],
-//         }}
-//         transition={{
-//           duration: 4,
-//           delay,
-//           ease: "easeInOut",
-//           times: [0, 0.3, 0.7, 1],
-//         }}
-//       />
-
-//       {/* Folded phase */}
-//       <motion.img
-//         src={foldedSrc}
-//         alt="Folded cloth"
-//         className="absolute w-64 h-60 object-cover "
-//         initial={{ opacity: 0, scale: 0.8 }}
-//         animate={{ opacity: 1, scale: 1 }}
-//         transition={{ duration: 1, delay: delay + 3.5 }}
-//       />
-//     </div>
-//   );
-// };
-
-// export default ClothItem;
