@@ -52,28 +52,3 @@ export default function ClothesShowcase({ size = "lg" }) {
   );
 }
 
-
-// // src/components/ClothesShowcase.jsx
-// import ClothItem from "./ClothItem";
-
-// export default function ClothesShowcase() {
-//   return (
-//     <div className="flex flex-wrap gap-8 justify-center items-center mt-12">
-//       <ClothItem 
-//         wrinkledSrc="/models/blue_w.png" 
-//         foldedSrc="/models/blue_i.png" 
-//         delay={0} 
-//       />
-//       <ClothItem 
-//         wrinkledSrc="/models/red_w.png" 
-//         foldedSrc="/models/red_i.png" 
-//         delay={1} 
-//       />
-//       <ClothItem 
-//         wrinkledSrc="/models/green_w.png" 
-//         foldedSrc="/models/green_i.png" 
-//         delay={2} 
-//       />
-//     </div>
-//   );
-// }
